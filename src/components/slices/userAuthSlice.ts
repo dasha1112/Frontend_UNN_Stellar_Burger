@@ -64,14 +64,14 @@ export const registerUser = createAsyncThunk(
   }
 );
 
-interface IUserAuth {
+export interface IUserAuth {
   userData: TUser | null;
   isAuthChecked: boolean;
   isLoading: boolean;
   error: string | null;
 }
 
-const initialState: IUserAuth = {
+export const initialState: IUserAuth = {
   userData: null,
   isAuthChecked: false,
   isLoading: false,
